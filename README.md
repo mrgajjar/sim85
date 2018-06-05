@@ -8,10 +8,13 @@ without having actual hardware. Here are some key features
 
 -You can directly write your programs in mnemonics form in file. So opcodes
  and hand coding part becomes transperant.
+
 -Excellent delay simulation with user specified clock frequencies for 8085.
  You can get total T-states since start of execution. Very useful for writing
  delay loops for actual programs, calculting delay for different speed CPUs.
+
 -Single steping through program.
+
 -You can insert break points in the program.
              
 About 8085 Simulator Commands 
