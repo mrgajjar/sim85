@@ -1,0 +1,26 @@
+Copyright (C) 2001  Mrugesh R. Gajjar
+binary to bcd convertor
+.BEGIN
+START:  LXI SP FFF
+        LXI H 0500 ; store binary at 500h location
+        MOV A M
+        CALL PWETEN
+        HLT
+
+PWETEN: LXI H 0010  ; unpacked bcd will be at 10h,11h,12h
+        MVI B 64
+        CALL BINBCD
+        MVI B 0A
+        CALL BINBCD
+        MOV M A
+        RET
+
+BINBCD: MVI M FF
+NXTBUF: INR M
+        SUB B
+        JNC NXTBUF
+        ADD B
+        INX H
+        RET
+
+.END

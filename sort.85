@@ -1,0 +1,24 @@
+Copyright (C) 2001  Mrugesh R. Gajjar
+sorts 10 data items stored at address 0010h
+.BEGIN
+        LXI SP 0FFF
+        MVI D 0A
+GO:     MVI E 09
+        LXI H 0010
+REV:    MOV A M
+        INX H
+        MOV B M 
+        CMP B
+        JNC CHANGE
+BACK:   DCR E
+        JNZ REV
+        DCR D
+        JNZ GO
+        HLT
+
+CHANGE: MOV M A
+        DCX H
+        MOV M B
+        INX H
+        JMP BACK
+.END

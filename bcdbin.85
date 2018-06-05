@@ -1,0 +1,33 @@
+Copyright (C) 2001  Mrugesh R. Gajjar
+bcd to binary convert program
+.BEGIN
+START:  LXI SP 0FFF
+        LXI H 0010   ; stored bcd on 0010h
+        LXI B 0011   ; binary number will be in 0011h
+        MOV A M
+        CALL BCDBIN
+        STAX B
+        HLT
+
+BCDBIN: PUSH B
+        PUSH D
+        MOV B A
+        ANI 0F
+        MOV C A
+        MOV A B
+        ANI F0
+        RRC
+        RRC
+        RRC
+        RRC
+        MOV D A
+        XRA A
+        MVI E 0A
+SUM:    ADD E
+        DCR D
+        JNZ SUM
+        ADD C
+        POP D
+        POP B
+        RET
+.END

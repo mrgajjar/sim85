@@ -1,0 +1,39 @@
+Copyright (C) 2001  Mrugesh R. Gajjar
+.BEGIN
+begi: MVI B FF
+LXI H 100
+MVI     A       30
+MVI B 40        ;sdlfkjsdkfj
+ADD B
+MVI M 10
+MOV         C       B
+MVI E 05
+CALL mrg
+HLT
+
+mrg:       MOV M A
+MOV      D A
+.BREAK 
+DCR E
+CNZ mrg
+RET
+.END
+
+
+
+
+
+
+
+
+;jfsdjkfhka
+
+dfs;
+
+call            844 ;;;;;;;;;
+
+                        end: hlt ;
+.END
+mov a b
+mrugesh
+
