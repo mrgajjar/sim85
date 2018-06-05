@@ -14,9 +14,8 @@ without having actual hardware. Here are some key features
 -Single steping through program.
 -You can insert break points in the program.
              
---------------------------------
-ABOUT 8085 SIMULATOR COMMANDS :-
---------------------------------
+About 8085 Simulator Commands 
+-----------------------------
 When simulator is started it shows "-" prompt in lower left corner of the
 screen. Although commands are always listed on screen, here is more
 detailed description.
@@ -34,9 +33,9 @@ detailed description.
                  etc.
 6. "F" COMMAND : Used for setting the clock frequency of the 8085 CPU before
                  simulation.
-----------------------------------------------------------
-ABOUT SYNTEX OF THE ASSEMBLY PROGRAM FOR 8085 SIMULATOR :-
-----------------------------------------------------------
+
+About Syntax of The Assembly Program for 8085 Simulator
+-------------------------------------------------------
 
 1. Every program must begin with ".BEGIN" directive.
    Every program should end with ".END" directive.
@@ -56,8 +55,8 @@ ABOUT SYNTEX OF THE ASSEMBLY PROGRAM FOR 8085 SIMULATOR :-
 7. All mnemonics must be written in capital latters.
 8. Maximum label length=16 characters.
 
---------------
-LIMITATIONS :-
+
+Limitations
 --------------
 1. Following instructions of 8085 can not be used in program.
    DAA,EI,DI,RIM,SIM,RST 0 TO RST 7
@@ -65,8 +64,8 @@ LIMITATIONS :-
 3. 4k bytes data memory.
 4. Maximum 1000 instructions per program.
 
--------
-NOTE :-
+
+Note
 -------
 
 Some assembly programs are provided with simulator for getting idea about
