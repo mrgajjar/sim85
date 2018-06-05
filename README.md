@@ -1,11 +1,7 @@
 # sim85
-8085 Microprocessor Simulator
-
-
-|=======================User Manual For 8085 Simulator=====================|
-Author : Mrugesh R. Gajjar                                                 |                                                       
-Date   : 28-02-2001                                                        |
-|==========================================================================|
+User Manual For 8085 Simulator
+Author : Mrugesh R. Gajjar                                                                                                      
+Date   : 28-02-2001                                                       
 
 This is a humble try to present a 8085 microprocessor simulator.
 It lets you simulate programs of 8085 on 80x86 based microprocessors. It
