@@ -1,14 +1,13 @@
 # sim85
 8085 Microprocessor Simulator
 
-|==========================================================================|
+
 |=======================User Manual For 8085 Simulator=====================|
-|==========================================================================|
 Author : Mrugesh R. Gajjar                                                 |                                                       
 Date   : 28-02-2001                                                        |
 |==========================================================================|
 
-        This is a humble try to present a 8085 microprocessor simulator.
+This is a humble try to present a 8085 microprocessor simulator.
 It lets you simulate programs of 8085 on 80x86 based microprocessors. It
 can be very useful tool for anyone who wants to do 8085 assembly programming
 without having actual hardware. Here are some key features
@@ -20,8 +19,7 @@ without having actual hardware. Here are some key features
  delay loops for actual programs, calculting delay for different speed CPUs.
 -Single steping through program.
 -You can insert break points in the program.
-
-|===========================================================================|                
+             
 --------------------------------
 ABOUT 8085 SIMULATOR COMMANDS :-
 --------------------------------
